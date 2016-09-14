@@ -1,1 +1,90 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+     <title>gnublet - a small gnub (noob)</title>
+     
+<!--navbar styles-->
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+
+</head>
+<body>
+
+<!--Navbar-->
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Day</a>
+    <div class="dropdown-content">
+      <a href="d0.html">0</a>
+      <a href="d1.html">1</a>
+      <a href="d2.html">2</a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+  </li>
+<li><a class="active" href="aboutme.html">About Me</a></li>
+</ul>
+
+<h1>Gnublet</h1>
+<h4>Welcome to my blog!</h4>
+<p>Here I'll try to post daily thoughts on what I've learned on my path to become a data scientist, software engineer, or developer. I was recommended to do this at the fullstack meetup in LA, which is awesome! My learning rate has exponentially increased by learning to code with others!</p>
+
+</body>
+</html>
+
+
