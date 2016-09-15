@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-     <title>gnublet - a small gnub (noob)</title>
-     
-<!--navbar styles-->
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>My coding journey</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--ANIMATED FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
+     <!--PRETTYPHOTO MAIN STYLE -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+       <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--Day 1-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
 
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
-
-
+    <style>
+        #mapid { height: 400px;}
+    </style>
 </head>
-<body>
-
-<!--Navbar-->
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Day</a>
-    <div class="dropdown-content">
-      <a href="d0.html">0</a>
-      <a href="d1.html">1</a>
-      <a href="d2.html">2</a>
+<body >
+         <!-- NAV SECTION -->
+         <div class="navbar navbar-inverse navbar-fixed-top">
+       
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">gnublet</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home-sec">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#journey-sec" class="dropbtn">JOURNEY</a>
+                    <div class="dropdown-content">
+      <a href="#day0-sec">0</a>
+      <a href="#day1-sec">1</a>
+      <a href="day2-sec">2</a>
       <a href="#"></a>
       <a href="#"></a>
       <a href="#"></a>
@@ -76,15 +70,414 @@ li.dropdown {
       <a href="#"></a>
       <a href="#"></a>
     </div>
-  </li>
-<li><a class="active" href="aboutme.html">About Me</a></li>
-</ul>
+    </li>
+                    <li><a href="#aboutme-sec">ABOUT ME</a></li>
+                    <!-- <li><a href="#port-sec">PORTFOLIO</a></li> -->
+                    <li><a href="#contact-sec">CONTACT</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+    
+    <!--HOME SECTION-->
+    <div id="home-sec">
 
-<h1>Gnublet</h1>
-<h4>Welcome to my blog!</h4>
-<p>Here I'll try to post daily thoughts on what I've learned on my path to become a data scientist, software engineer, or developer. I was recommended to do this at the fullstack meetup in LA, which is awesome! My learning rate has exponentially increased by learning to code with others!</p>
+   
+    <div class="container"  >
+        <div class="row text-center">
+            <div  class="col-md-12" >
+                <span class="head-main" >Gnublet</span>
+                <br>
+                <h3 class="head-last col-md-4 col-md-offset-4  col-sm-6 col-sm-offset-3"> a small gnub (noob)<br></h3>
+            </div>
+        </div>
+    </div>
+         </div>
+    
+    <!--END HOME SECTION-->  
+
+    <!-- JOURNEY SECTION  -->
+    <section id = 'journey-sec'>
+        <div class = "container">
+            <div class="row g-pad-bottom" >
+                 <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i> Journey  </h1>
+
+                 <div class="row g-pad-bottom">
+                 <h2 id = "day0-sec"> Day 0</h2>
+                 <h3>My first online webpage</h1>
+<p>To get started, I've made my first online webpage using <a href = "https://pages.github.com/">github</a>! I got a working toolbar (but there's little functionality right now). I also learned how to push changes using git! But now it's is 3:45am for me so I should probably sleep.</p>
+
+
+                    <h2 id="day1-sec">Day 1</h2>
+                        <h3>My First Map</h3>
+<p>Wow, Leaflet and Mapbox unfold new possibilities. I came across Leaflet by doing pair programming at Fullstack LA. Here are some of my favorite views around: the Getty Center (especially right after a storm) and the Santa Monica Pier. Try clicking my markers or the circle! I'll wait. Clicking anywhere else brings up a popup telling you the latitude and longitude. What's your latitude and longitude? Later, I'd like to dive deeper into GeoJSON and Mapbox.<br>
+
+I'm starting to notice that things stay interesting when I don't stick too closely to tutorials and start exploring and tinkering with code. It get's a more personal feel, which also makes it unforgettable. My writing also could use some work :) I'm thinking about making a map based game with interaction between players. Not sure what though since from my understanding, this site is static: no SQL support for now (but it's free) .</p>
+
+<div id="mapid"></div>
+
+<!--  #mapid { height: 180px;} I don't know where to put this. NEVERMIND! I FIGURED IT OUT-->
+
+ <!--Initialize Map -->
+ <script type="text/javascript">
+     var mymap = L.map('mapid').setView([34.1, -118.497], 11);
+
+ L.tileLayer('https://api.mapbox.com/styles/v1/gnublet/cit2syurz002y2wml0d7zwwuv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ251YmxldCIsImEiOiJjaXQyc3g3M3QwdDhsMnpxcHdxbjZmNWNxIn0._gsNxwVNZwCtWq6jGzBFIg', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'your.mapbox.project.id',
+    accessToken: 'your.mapbox.public.access.token'
+}).addTo(mymap);     
+
+
+//Let's add a marker in addition to our tile layer
+var marker1 = L.marker([34.009, -118.4974]).addTo(mymap);
+
+var marker2 = L.marker([34.0776, -118.4746]).addTo(mymap);
+
+//Here's a circle just for practice. Radius is in meters
+var circle1 = L.circle([34.0776, -118.4746], 2000, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(mymap);
+
+
+//We can also add popups
+marker1.bindPopup("<b>Santa Monica Pier</b><br>Great place to hangout!");
+circle1.bindPopup("I am a random circle");
+marker2.bindPopup("<b>Getty Center</b><br>Great eye candy!")
+
+//popups as layers
+/*var popup = L.popup()
+    .setLatLng([34.009, -118.4974])
+    .setContent("I am a standalone popup.")
+    .openOn(mymap);*/
+
+/*
+function onMapClick(e) {
+    alert("You clicked the map at " + e.latlng);
+}*/
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(mymap);
+}
+
+mymap.on('click', onMapClick);
+
+mymap.on('click', onMapClick);
+ </script>
+
+
+                    <h2>Day 2</h2>
+                        <h3>Making this look pretty with CSS</h3>
+                        <p>The <a href="index2.html">previous site</a>
+ was probably the ugliest page posted on the internet. It didn't make too much use of CSS, only HTML and some javascript. By using CSS, we can get something that isn't too bad. The nice thing about web design is that there's lots of free stuff out there. I tweaked a free template that fit my preferences: I wanted an interface that was all in 1 page so you don't need to click around if you don't want to. In the future, I will look at how to load pages incrementally instead of all at once, to make the page run faster. </p>
+
+
+                 </div>
+             </div>
+        </div>
+    </section>
+    <!-- END JOURNEY SECTION -->
+    <!--SERVICES SECTION   
+    <section  id="services-sec">
+        <div class="container">
+            <div class="row ">
+                <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs "></i> Our Services  </h1>
+                
+               
+                <div class="text-center g-pad-bottom">
+                    <div class="col-md-4 col-sm-4">
+                            <i class="fa fa-fire-extinguisher fa-5x faa-vertical animated c-main "></i>
+                            <h4>Free To Use </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                            <i class="fa fa-coffee fa-5x faa-ring animated c-main "></i>
+                            <h4>100%  Responsive </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            
+                    </div>
+                   
+                    <div class="col-md-4 col-sm-4">
+                            <i class="fa fa-gavel fa-5x faa-shake animated c-main "></i>
+                            <h4>Clean & Customizable </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          
+                    </div>
+                </div>
+                  </div>
+                <div class="row">
+                  
+                    <div class="col-md-4 col-sm-4">
+                          <div class="panel panel-default">
+                       
+                        <div class="panel-body">
+                             <h4 class="adjst">Lorem ipsum dolor sit amet </h4>
+                            <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                </p>
+                             
+                            
+                        </div>
+                    </div> 
+                            
+                    </div>
+                   <div class="col-md-4 col-sm-4">
+                          <div class="panel panel-default">
+                       
+                        <div class="panel-body">
+                             <h4 class="adjst">Lorem ipsum dolor sit amet </h4>
+                            <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                </p>
+                             
+                            
+                        </div>
+                    </div> 
+                            
+                    </div>
+                     <div class="col-md-4 col-sm-4">
+                          <div class="panel panel-default">
+                       
+                        <div class="panel-body">
+                             <h4 class="adjst">Lorem ipsum dolor sit amet </h4>
+                            <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                </p>
+                             
+                            
+                        </div>
+                    </div> 
+                            
+                    </div>
+                </div>
+          
+        </div>
+    </section>
+    <END SERVICES SECTION-->
+  
+    
+     <!-- PORTFOLIO SECTION
+   <section id="port-sec">
+       <div class="container">
+           <div class="row g-pad-bottom" >
+                 <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i> My Portfolio  </h1>
+               
+                <div class="col-md-10 col-md-offset-1 col-sm-12" >
+                    <ul class="portfolio-items col-3">
+                        <li class="portfolio-item">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t1.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b1.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                       
+                        <li class="portfolio-item">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t2.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b2.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t3.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b3.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t4.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b4.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t5.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b5.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item ">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t6.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b6.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item ">
+                           <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t7.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b7.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                        <li class="portfolio-item ">
+                           <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t8.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b8.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                         <li class="portfolio-item">
+                            <div class="item-main">
+                                <div class="portfolio-image">
+                                    <img src="assets/img/portfolio/thumb/t9.png" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b9.png"><i class=" fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+       </div>
+   </section>
+     END PORTFOLIO SECTION-->
+    <!--CONTACT SECTION-->
+    <section id ="aboutme-sec">
+        <div class="container">
+            <div class="row g-pad-bottom">
+                  <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i>About Me </h1>
+                    <p>In high school, I didn't really have plans for my future, and wasn't even sure about going to college. I ended up getting accepted to UC Riverside, even though I didn't apply there. During the summer in between high school and college, I worked my first full time, 9-5 job selling drugs. <br><br>
+
+At a pharmacy. <br><br>
+
+This was my first time I was sort of independent, so I wanted to see what I was capable of. Every morning I arrived at the pharmacy about 45 minutes early and read pages from 2 books: Calculus of a Single Variable by J. W. Kitchen and Chemistry by Oxtoby and Gillis. Maybe it was the quiet atmosphere I had in the front of my car, but I never felt so focused. As I read the first chapter out of Kitchen's dusty book, I felt as if I was learning magic or something. Powerful, general truths were revealed in the cleanest arguments I've seen. Oxtoby simulaneously showed how the universe was connected at all levels. This was the first time I saw a hint of emergent phenomenon: how important structures like atoms, cells, organs, life, or planets, emerge from smaller scales. Many people attribute this to a god, but to me, it was something more.<br><br>
+
+I then decided to major in physics. I was a little late since I wasn't taking any real physics classes my first semester, only an ungraded seminar. However all the physics classes depended on finishing the lower division series. Since I didn't meet the prereqs, I decided to take a bunch of math classes for fun. These classes further reminded me of how math reveals so many general truths in such a beautiful way. So I decided to take a second major in pure math. I happened to come across an email about the Putnam math competition, an annual undergraduate math competition in the US and Canada. The average score each year tends to be around 1/120 and each problem is worth 10 points...Yeah, it's that hard. Well, what's there to lose? We would have unofficial weekly club meetings to talk about relatively low level problems. Simply following the ideas of my friends taught me a lot about other ways of thinking. Small communities like this made my time at UC Riverside very well spent.<br><br>
+
+Before graduating, I faced a similar problem of not knowing what I wanted to do with my life, so I just went with the natural choice by attending the physics PhD program at Ohio State. I honestly chose the school based on their building and how much more money they offered compared to California. This was a period where I started to stagnate. I was learning almost nothing in terms of science since I've already learned the topics as a junior in college, even using the exact same books. However, I did gain self-confidence by teaching classes. In the past, I've always feared publc speaking. I felt nervous at first, but over time, I learned to turn the nerves into excitement which fueled my teaching. Teaching actually became fun! So, by the time I left, I felt it was time well spent.<br><br>
+
+I later transfered to the cognitive psychology department since I found a new interesting question: how does consciousness emerge from neurons and glia. I started pondering this after doing a computer letter recognition project in one of my computational physics classes. However, it was in this new psychology program where I realized that confidence was domain specific. Even though I was comfortable with my math and physics, I had absolutely no knowledge of psychology or statistics. I could pick the pieces up, but there where more pieces than I could count. I still maintained a high GPA, but there's a huge difference between doing well and feeling confident. I also realized that in the long run, a cognitive psychology PhD leads nowhere except academia much like the type of physics I was doing a year earlier. So I left.<br><br>
+
+
+
+
+ Up until recently, my life goal was just to learn as much as I could. Now, my perspective is starting to change. Knowing things doesn't really change anything, it's what you do and how you do it. Life is too precious to spend it all on one small detail. With data science, statistics, and computer science, you have the tools to explore anything of interest, deeply and efficiently, while bettering the world and connecting with people.<br><br>
+
+I've been naive. Instead of making decisions based on final outcomes, try weighting outcomes together with the quality of the journey<sup>1</sup>. If you had to choose between winning a Nobel prize and being stressed for 40 years, or having accomplished little, but were happy the entire time, which would you choose?<br><br>
+
+Computer science gives you the power to choose your own path, if jobs aren't available (at least in theory). This is partly my reason of showing you my journey and hopefully I can express how high the sky really is.<br><br>
+
+Thanks!<br><br>
+
+<small>I think a super AI would sum over all groups (and wouldn't annihilate us (unless it was by accident) and would add regularized terms on killing, just in case).<sup>1</sup> </small>
+ </p>
+
+                  
+                <div class="col-md-6 ">
+                    
+                 
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  id="contact-sec">
+        <div class="container">
+             
+            <div class="row g-pad-bottom">
+                  <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i> Contact Info  </h1>
+                
+                  
+                <div class="col-md-6 ">
+                    <h2>Feel free to contact me about anything: questions, comments, recommendations, opportunities, etc.</h2>
+                 
+                    <p>
+                         <strong> Email: </strong> gnublet AT gmail DOT com
+                        <br>
+                        <strong> LinkedIn: </strong> https://www.linkedin.com/in/kevin-wong-28b235a1      <br>     
+                        <strong> Github: </strong> github: https://github.com/gnublet 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END CONTACT SECTION-->
+
+   
+
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        Check out my github: https://github.com/gnublet 
+         
+    </div>
+    <!-- END FOOTER SECTION -->
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.min.js"></script>  
+     <!-- ISOTOPE SCRIPT   -->
+    <script src="assets/plugins/jquery.isotope.min.js"></script>
+    <!-- PRETTY PHOTO SCRIPT   -->
+    <script src="assets/plugins/jquery.prettyPhoto.js"></script>    
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
 
 </body>
 </html>
-
-
