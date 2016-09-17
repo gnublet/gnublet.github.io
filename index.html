@@ -193,6 +193,23 @@ mymap.on('click', onMapClick);
                         <p>The <a href="index2.html">previous site</a>
  was probably the ugliest page posted on the internet. It didn't make too much use of CSS, only HTML and some javascript. By using CSS, we can get something that isn't too bad. The nice thing about web design is that there's lots of free stuff out there. I tweaked a free template that fit my preferences: I wanted an interface that was all in 1 page so you don't need to click around if you don't want to. In the future, I will look at how to load pages incrementally instead of all at once, to make the page run faster. </p>
 
+                    <h2>Day 3</h2>
+                        <h3>Python Day</h3>
+                        <p> I spent most of the day driving. That's the cost of living in LA. Anyways, I went to a Python Meetup in Little Tokyo where I met some people and talked about python stuff: Tensorflow, scapy, scikit-learn, jupyter notebook, and all that jazz. Lots of people are interested in data science and that seems to be the leading motivation to learn python.
+                        I explored some functionality that I didn't know existed. I played around with the dir() function which, along with help() allows quick python learning. I also noticed that in python 3, to define a class, you don't need to have object in parenthesis and can just write<br><br>
+                        class nameOfClass:
+                        <br><br>
+                        rather than<br>
+                        class nameOfClass(object):<br>
+                        But on examining this further, parenthesis is how python uses inheritance, and ommitting them is not recommended. For instance, 
+                        <br><br>
+                        class Stack(object):<br><br>
+                        inherits nothing, while<br><br>
+                        class Stack(list):<br><br>
+                        inherits all the methods of list. Using dir(), we see that this new Stack() class has append(), insert(), pop(), sort(), etc.<br><br>
+                        I also learned more about generators, which, instead of return a value, can generate entire sequences using 'yield'. This is useful when you know you'll be working with a huge results set and don't need most of the results. 
+  </p>
+
 
                  </div>
              </div>
