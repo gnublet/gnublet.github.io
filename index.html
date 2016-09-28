@@ -126,7 +126,7 @@
                         <h3>My First Map</h3>
 <p>Wow, Leaflet and Mapbox unlock new possibilities. I came across Leaflet by doing pair programming at Fullstack LA. Here are some of my favorite views around: the Getty Center (especially right after a storm) and the Santa Monica Pier. Try clicking my markers or the circle! I'll wait. Clicking anywhere else brings up a popup telling you the latitude and longitude. What's your latitude and longitude? Later, I'd like to dive deeper into GeoJSON and Mapbox.<br>
 
-I'm starting to notice that things stay interesting when I don't stick too closely to tutorials and start exploring and tinkering with code. It get's a more personal feel, which also makes it unforgettable. My writing also could use some work :) I'm thinking about making a map based game with interaction between players. Not sure what though since from my understanding, this site is static: no SQL support for now (but it's free) .</p>
+I'm starting to notice that things stay interesting when I don't stick too closely to tutorials and start exploring and tinkering with code. It get's a more personal feel, which also makes it hard to forget. My writing also could use some work :) I'm thinking about making a map based game with interaction between players. Not sure what though since from my understanding, this site is static: no SQL support for now (but it's free) .</p>
 
 <div id="mapid"></div>
 
@@ -252,7 +252,24 @@ mymap.on('click', onMapClick);
                     <img src="hmm1.jpeg" alt="hmm"><br>
 
                     This resembles the Agile method. I don't claim to be an expert in Agile (since I've never really worked in a business environment... Hire MEEE!), but from what I understand, Test Driven Development (TDD) is one of the methods used in to optimize the software development process. I think it's really cool how topics from various fields have the same underlying structure. Even this blog follows this evidence-based correcting scheme: I write or code about things I don't know about, then realize I don't know anything, and finally update my understanding by either learning something new or connecting it with something that I already know which updates me as a person. <br><br>
-                    However, my dilema is how do I know when to hone particular skills (like Depth First Search)? I guess, when I find a problem I'm interested enough in that I think will have an impact. I think I might have one that's good enough for a starter project which involves the reuters web crawler, which I'm still trying to debug. Don't worry, I didn't forget!
+
+                    Just thinking aloud, we can apply this updating scheme to different time scales of our lives. In the short term (~minutes), creativity is the process of broadening the distribution of particles, diversifying your options, while focus allows us to put in time into specific efforts. In intermediate time scales (~hours to days), we have things like tasks of projects. Exploring various avenues like surfing the web, or just exploring interesting topics can be useful as an alternative to continuing a solid routine. For long time scales (~years) it's always good to check long term goals or your current state in life. You can still find life altering decisions, but this is something not everyone chooses to do. Exploring different avenues like making career changes or taking long vacations can work, but there's a larger opportunity cost. I know we hear this all the time, but I think it's really important to actually enjoy even the times where we have to grind and put in lots of work. At least so far, I wouldn't trade my career change phase for anything.
+                    <br><br>
+                    I think I might have a project worthy of a first big project to dive deep into which involves the reuters web crawler. I'm still trying to debug! Don't worry, I didn't forget! I tested 2 individual crawlers that work (1 to get links to the top news articles and another to actually parse the text), but I can't seem to combine it into 1 crawling process. If this works, I can try generalizing the crawler to more news sites.
+                    </p>
+
+                     <h2>Day 10</h2>
+                    <h3>Brief Natural Language Processing with NLTK</h3>
+                    <p>
+                    I started playing with the NLTK library in python following a tutorial. Later today, I will be attending a talk at Headspace that covers NLP more in depth using libraries like scapy and NLTK. Hope it's fun! Anyways, here's something that I found interesting in the Book of Genesis. 
+                    <img src="genesis1.png" alt="genesis"><br>
+
+                    The vertical stripe represents an instance of that word in the text. The word God is mentioned a lot more than others, and is more concentrated at the beginning. Also, women aren't mentioned a lot compared to men, people, or even servants.
+
+                    For a modern comparison here's a visualization from google's ngram site:
+                    <iframe name="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?content=men%2Cwomen%2Cpeople%2Cservant&year_start=1700&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cmen%3B%2Cc0%3B.t1%3B%2Cwomen%3B%2Cc0%3B.t1%3B%2Cpeople%3B%2Cc0%3B.t1%3B%2Cservant%3B%2Cc0" width=900 height=500 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
+                    It looks like the whole feminist movement is having an impact in recent years. People don't care about men anymore :)
+                    I tried automatically generating text based on the style of the Book of Genesis, but it looks like the generate() method is broken for now.
                     </p>
 
                  </div>
@@ -276,20 +293,12 @@ I then decided to major in physics. I was a little late since I wasn't taking an
 
 Before graduating, I faced a familiar problem of not knowing what to do with my life, so I just went with the natural choice by attending the physics PhD program at Ohio State. I honestly chose the school based on their building and how much more money they offered compared to California. This was a period where I started to stagnate. I was learning almost nothing in terms of science since I've already learned the topics as a junior in college, even using the exact same books. However, I did gain self-confidence by teaching classes. In the past, I've always feared publc speaking. I felt nervous at first, but over time, I learned to turn the nerves into excitement which fueled my teaching. Teaching actually became fun! So, by the time I left, I felt it was time well spent.<br><br>
 
-I later transfered to the cognitive psychology department since I found a new interesting question: how does consciousness emerge from neurons and glia. I started pondering this after doing a computer letter recognition project in one of my computational physics classes. However, it was in this new psychology program where I realized that confidence was domain specific. Even though I was comfortable with my math and physics, I had absolutely no knowledge of psychology or statistics. I could pick the pieces up, but there where more pieces than I could count. I still maintained a high GPA, but there's a huge difference between doing well and feeling confident. I also realized that in the long run, a cognitive psychology PhD leads nowhere except academia much like the type of physics I was doing a year earlier. So I left.<br><br>
+After lecturing for a year, I later transfered to the cognitive psychology department since I found a new interesting question: how does consciousness emerge from neurons and glia. I started pondering this after doing a computer letter recognition project in one of my computational physics classes and trying to understand how people (like my students) learned new things. However, it was in this new psychology program where I realized that confidence was domain specific. Even though I was comfortable with my math and physics, I had absolutely no knowledge of psychology or statistics. I could pick the pieces up, but there where more pieces than I could count. I still maintained a high GPA, but I wasn't gaining transferable skills as quickly as I'd like and in the long run, a cognitive psychology PhD leads nowhere except academia much like the type of physics I was doing a year earlier. So I left with the hope that I can learn faster through self-motivation.<br><br>
 
-
-
-
- Up until recently, my life goal was just to learn as much as I could. Now, my perspective is starting to change. Knowing things doesn't really change anything, it's what you do and how you do it. Life is too precious to spend it all on one small detail. With data science, statistics, and computer science, you have the tools to explore anything of interest, deeply and efficiently, while bettering the world and connecting with people.
-
-Here's something I've been thinking about. Instead of making decisions based on outcomes, I should try weighting outcomes together with the quality of the journey<sup>1</sup>. If you had to choose between winning a Nobel prize and being stressed for 40 years, or having accomplished little, but were happy the entire time, which would you choose?<br><br>
-
-Computer science gives you the power and courage to choose your own path. If jobs aren't available, make them! This is one of my reasons for showing my journey and hopefully I can express how high the sky really is.<br><br>
+ Up until recently, I just wanted to learn as much as I could, but knowing things doesn't really change anything, it's what you do and how you do it. Life is too precious to spend it all on one small detail. With technical knowledge (like data science, statistics, and computer science), you have the tools to explore anything that interests you, while bettering the world and connecting with others. If jobs aren't available, make them! This is one of my reasons for showing my journey and hopefully I can express how high the sky can be.<br><br>
 
 Thanks!<br><br>
 
-<small>I think a super AI would sum over all groups (and wouldn't annihilate us (unless it was by accident) and would add regularized terms on killing, just in case).<sup>1</sup> </small>
  </p>
 
                   
@@ -315,7 +324,7 @@ Thanks!<br><br>
                          <strong> Email: </strong> gnublet AT gmail DOT com
                         <br>
                         <strong> LinkedIn: </strong> https://www.linkedin.com/in/kevin-wong-28b235a1      <br>     
-                        <strong> Github: </strong> github: https://github.com/gnublet 
+                        <strong> Github: </strong> https://github.com/gnublet 
                     </p>
                 </div>
             </div>
